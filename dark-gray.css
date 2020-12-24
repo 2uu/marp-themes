@@ -1,0 +1,66 @@
+/* @theme dark-gray */
+
+@import 'default';
+
+:root {
+    --default-color: #537072;
+    --default-bg-color: #F4EBDB;
+    --title-color: #F4EBDB;
+    --title-bg-color: #2C4A52;
+    --hf-color: #8E9B97;
+    --highlight-color: #F4EBDB;
+    --highlight-bg-color: #8E9B97;
+}
+section {
+    background-color:  var(--default-bg-color);
+    font-family: 'Yu Gothic UI';
+    color: var(--default-color);
+}
+header {
+    text-align: left;
+    width: 100%;
+    color: var(--hf-color);
+}
+footer {
+    text-align: center;
+    width: 100%;
+    color: var(--hf-color);
+}
+/* ``` hogehoge ```*/
+/*pre{
+    border: none;
+    color: var(--highlight-color);
+    background-color: var(--highlight-bg-color);
+}*/
+h1, h2, h3, h4, h5 {
+    text-align: left;
+    color: var(--default-color);
+}
+h1 {
+    text-align: center;
+}
+h3{
+    text-align: right;
+}
+img {
+    background-color: transparent;
+}
+section.title {
+    background-color: var(--title-bg-color);
+    color: var(--title-color);
+}
+section.title > h1{
+    text-align: left;
+    color: var(--title-color);
+}
+section.title > h5{
+    text-align: right;
+    color: var(--title-color);
+}
+section.title > h2, h3, h4{
+    text-align: center;
+    color: var(--title-color);
+}
+blockquote{
+    font-size: 18px;
+}

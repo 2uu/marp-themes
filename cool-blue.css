@@ -1,0 +1,60 @@
+/* @theme cool-blue */
+
+@import 'default';
+
+:root {
+    --default-color:  #28385E;
+    --default-bg-color: #CCCCCC;
+    --title-color: #CCCCCC;
+    --title-bg-color: #28385E;
+    --hf-color: #6A91C1;
+    --highlight-color: #6A91C1;
+    --highlight-bg-color: #28385E;
+}
+section {
+    background-color:  var(--default-bg-color);
+    font-family: 'Yu Gothic UI';
+    color: var(--default-color);
+}
+header {
+    text-align: left;
+    width: 100%;
+    color: var(--hf-color);
+}
+footer {
+    text-align: center;
+    width: 100%;
+    color: var(--hf-color);
+}
+h1, h2, h3, h4, h5 {
+    text-align: left;
+    color: var(--default-color);
+}
+h1 {
+    text-align: center;
+}
+h3{
+    text-align: right;
+}
+img {
+    background-color: transparent;
+}
+section.title {
+    background-color: var(--title-bg-color);
+    color: var(--title-color);
+}
+section.title > h1{
+    text-align: left;
+    color: var(--title-color);
+}
+section.title > h5{
+    text-align: right;
+    color: var(--title-color);
+}
+section.title > h2, h3, h4{
+    text-align: center;
+    color: var(--title-color);
+}
+blockquote{
+    font-size: 18px;
+}
