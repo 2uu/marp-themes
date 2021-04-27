@@ -1,15 +1,22 @@
-/* @theme kawaii-pink */
+/* @theme kawaii-pop */
 
 @import 'default';
 
 :root {
-    --default-color: #E67A7A;
-    --default-bg-color: #FFF4E1;
-    --title-color: #FFF4E1;
-    --title-bg-color: #E67A7A;
-    --hf-color: #9DDCDC;
-    --highlight-color: #9DDCDC;
-    --highlight-bg-color: #E67A7A;
+    --color-dark: #7EC2C2;
+    --color-dark-invert: #7EC2C2;
+    --color-light: #9DDCDC;
+    --color-lightest: #FFF4E1;
+
+    /* setting */
+    --default-color: var(--color-dark);
+    --default-bg-color: var(--color-lightest);
+    --title-color: var(--color-lightest);
+    --title-bg-color: var(--color-dark-invert);
+    --hf-color: var(--color-light);
+    --highlight-color: var(--color-lightest);
+    --highlight-bg-color: var(--color-light);
+    --blockquote-color: var(--color-light);
 }
 section {
     background-color:  var(--default-bg-color);
@@ -26,6 +33,7 @@ footer {
     width: 100%;
     color: var(--hf-color);
 }
+
 h1, h2, h3, h4, h5 {
     text-align: left;
     color: var(--default-color);
@@ -37,6 +45,7 @@ h3{
     text-align: right;
 }
 img {
+    text-align: center;
     background-color: transparent;
 }
 section.title {
@@ -56,5 +65,6 @@ section.title > h2, h3, h4{
     color: var(--title-color);
 }
 blockquote{
-    font-size: 18px;
+    color: var(--blockquote-color);
+    font-size: 22px;
 }
