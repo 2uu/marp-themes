@@ -1,0 +1,69 @@
+/* @theme dark-blue */
+
+@import 'default';
+
+:root {
+    --color-dark: #454545;
+    --color-dark-invert: #454545;
+    --color-light: #757575;
+    --color-lightest: #B4CCE3;
+
+    /* setting */
+    --default-color: var(--color-dark);
+    --default-bg-color: var(--color-lightest);
+    --title-color: var(--color-lightest);
+    --title-bg-color: var(--color-dark-invert);
+    --hf-color: var(--color-light);
+    --highlight-color: var(--color-lightest);
+    --highlight-bg-color: var(--color-light);
+    --blockquote-color: var(--color-light);
+}
+section {
+    background-color:  var(--default-bg-color);
+    font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", '游ゴシック Medium', 'Yu Gothic Medium', "游ゴシック体", "YuGothic", "メイリオ", "Meiryo", "verdana", sans-serif;
+    color: var(--default-color);
+}
+header {
+    text-align: left;
+    width: 100%;
+    color: var(--hf-color);
+}
+footer {
+    text-align: center;
+    width: 100%;
+    color: var(--hf-color);
+}
+
+h1, h2, h3, h4, h5 {
+    text-align: left;
+    color: var(--default-color);
+}
+h1 {
+    text-align: center;
+}
+h3{
+    text-align: right;
+}
+img {
+    background-color: transparent;
+}
+section.title {
+    background-color: var(--title-bg-color);
+    color: var(--title-color);
+}
+section.title > h1{
+    text-align: left;
+    color: var(--title-color);
+}
+section.title > h5{
+    text-align: right;
+    color: var(--title-color);
+}
+section.title > h2, h3, h4{
+    text-align: center;
+    color: var(--title-color);
+}
+blockquote{
+    color: var(--blockquote-color);
+    font-size: 22px;
+}
