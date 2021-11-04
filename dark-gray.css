@@ -62,5 +62,15 @@ section.title > h2, h3, h4{
     color: var(--title-color);
 }
 blockquote{
-    font-size: 18px;
+    font-size: 22px;
+}
+
+table{
+    font-size: 24px;
+    table-layout: fixed;
+    overflow-wrap: normal;
+}
+
+table td{
+    overflow-wrap: break-word;
 }
