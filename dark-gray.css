@@ -69,8 +69,10 @@ table{
     font-size: 24px;
     table-layout: fixed;
     overflow-wrap: normal;
+    text-align: center;
 }
 
 table td{
     overflow-wrap: break-word;
+    text-align: center;
 }

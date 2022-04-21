@@ -67,3 +67,17 @@ blockquote{
     color: var(--blockquote-color);
     font-size: 22px;
 }
+
+table{
+    font-size: 20px;
+    table-layout: fixed;
+    overflow-wrap: normal;
+    margin:1px;
+    width: auto;
+    height: auto;
+}
+
+table td{
+    overflow-wrap: break-word;
+    text-align: center;
+}
