@@ -1,0 +1,71 @@
+/* @theme gray-white */
+
+@import 'default';
+
+:root {
+    --default-color:  #242424;
+    --default-bg-color: #ffffff;
+    --title-color: #ffffff;
+    --title-bg-color: #3a3a3a;
+    --hf-color: #6e6e6e;
+    --highlight-color: #000000;
+    --highlight-bg-color: #888888;
+    --pre-color: var(--default-bg-color);
+    --pre-bg-color: var(--default-color);
+}
+section {
+    background-color:  var(--default-bg-color);
+    font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", '游ゴシック Medium', 'Yu Gothic Medium', "游ゴシック体", "YuGothic", "メイリオ", "Meiryo", "verdana", sans-serif;
+    color: var(--default-color);
+    font-size: 20pt;
+}
+header {
+    text-align: left;
+    width: 100%;
+    color: var(--hf-color);
+}
+footer {
+    text-align: center;
+    width: 100%;
+    color: var(--hf-color);
+}
+h1, h2, h3, h4, h5 {
+    text-align: left;
+    color: var(--default-color);
+}
+h1 {
+    text-align: center;
+}
+h3{
+    text-align: right;
+}
+img {
+    background-color: transparent;
+}
+section.title {
+    background-color: var(--title-bg-color);
+    color: var(--title-color);
+}
+section.title > h1{
+    text-align: left;
+    color: var(--title-color);
+}
+section.title > h5{
+    text-align: right;
+    color: var(--title-color);
+}
+section.title > h2, h3, h4{
+    text-align: center;
+    color: var(--title-color);
+}
+marp-pre{
+    color: var(--pre-color);
+    background-color: var(--pre-bg-color);
+    border-radius: 10px;
+    font-size: 100%;
+}
+blockquote{
+    /* color: var(--default-color);
+    background-color: var(--highlight-bg-color); */
+    font-size: 18px;
+}
